@@ -3,8 +3,7 @@ backend:
   branch: master
   repo: TonyHeimark/GatsbyExperiment
 
-media_folder: static/img
-public_folder: /img
+media_folder: ../src/images
 
 collections:
   - name: 'blog' # Used in routes, e.g., /admin/collections/blog
