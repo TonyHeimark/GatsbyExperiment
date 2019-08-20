@@ -7,22 +7,12 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
 import { Spring } from 'react-spring/renderprops'
 import Image from './image'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
-import Archive from './archive'
 import './layout.css'
-
-const MainLayout = styled.div`
-  max-width: 90%;
-  margin: 1rem auto;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-gap: 40px;
-`
 
 const Layout = ({ children, location }) => {
   const data = useStaticQuery(graphql`
@@ -39,19 +29,16 @@ const Layout = ({ children, location }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <Spring
-        from={{ height: location.pathname === '/' ? 150 : 300 }}
-        to={{ height: location.pathname === '/' ? 300 : 150 }}
+        from={{ height: location.pathname === '/' ? 0 : 1000 }}
+        to={{ height: location.pathname === '/' ? 400 : 0 }}
       >
         {styles => (
           <div style={{ overflow: 'hidden', ...styles }}>
-            <Image />
+            {location.pathname === '/' ? <Image /> : null}
           </div>
         )}
       </Spring>
-      <MainLayout>
-        <div>{children}</div>
-        <Archive />
-      </MainLayout>
+      {children}
       <footer>© {new Date().getFullYear()}, Tony Heimark</footer>
     </>
   )
