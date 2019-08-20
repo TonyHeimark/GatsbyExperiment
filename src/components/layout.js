@@ -9,6 +9,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Spring } from 'react-spring/renderprops'
 import Image from './image'
+import styled from 'styled-components'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
@@ -25,6 +26,12 @@ const Layout = ({ children, location }) => {
     }
   `)
 
+  const ImageContainer = styled.div`
+    height: auto;
+    max-height: 500px;
+    overflow: hidden;
+  `
+
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
@@ -33,12 +40,12 @@ const Layout = ({ children, location }) => {
         to={{ height: location.pathname === '/' ? 400 : 0 }}
       >
         {styles => (
-          <div style={{ overflow: 'hidden', ...styles }}>
+          <ImageContainer style={{ ...styles }}>
             {location.pathname === '/' ? <Image /> : null}
-          </div>
+          </ImageContainer>
         )}
       </Spring>
-      {children}
+      <div style={{ margin: '0 auto', maxWidth: '1200px' }}>{children}</div>
       <footer>© {new Date().getFullYear()}, Tony Heimark</footer>
     </>
   )

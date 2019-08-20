@@ -16,7 +16,7 @@ import Img from 'gatsby-image'
 const Image = props => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "daylight.jpg" }) {
+      placeholderImage: file(relativePath: { eq: "background.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1920) {
             ...GatsbyImageSharpFluid_tracedSVG
