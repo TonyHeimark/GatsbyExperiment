@@ -1,5 +1,6 @@
 ---
 title: First Post
+slug: first-post
 date: '2019-08-18'
 thumbnail: pc.jpg
 ---
