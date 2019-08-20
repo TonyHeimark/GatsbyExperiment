@@ -31,14 +31,13 @@ const postLayout = props => {
     }
   `
 
+  const thumbnail = markdownRemark.frontmatter.thumbnail.substr(12)
+
   return (
     <Layout location={props.location}>
       <PostContainer>
         <div className="image-container">
-          <Image
-            alt="Gatsby in Space"
-            filename={markdownRemark.frontmatter.thumbnail}
-          />
+          <Image alt="Gatsby in Space" filename={thumbnail} />
         </div>
         <div style={{ padding: '0 1rem' }}>
           <h1>{markdownRemark.frontmatter.title}</h1>
