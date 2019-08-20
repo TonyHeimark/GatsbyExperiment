@@ -1,6 +1,7 @@
 ---
 layout: blog
 title: How to become a frontend developer
+slug: how-to-become-a-frontend-developer
 date: 2019-08-20T11:46:06.782Z
 thumbnail: ../images/books.jpg
 ---
