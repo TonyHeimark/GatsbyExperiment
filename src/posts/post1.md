@@ -1,7 +1,7 @@
 ---
 title: First Post
 date: '2019-08-18'
-thumbnail: /src/images/pc.jpg
+thumbnail: pc.jpg
 ---
 
 # Hello
