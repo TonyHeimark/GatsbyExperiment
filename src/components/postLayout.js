@@ -7,6 +7,7 @@ const postLayout = props => {
 
   return (
     <Layout location={props.location}>
+      <img src={require(`../images/${markdownRemark.frontmatter.thumbnail}`)} />
       <h1>{markdownRemark.frontmatter.title}</h1>
       <div
         dangerouslySetInnerHTML={{
@@ -24,6 +25,7 @@ export const query = graphql`
       frontmatter {
         title
         date
+        thumbnail
       }
     }
   }

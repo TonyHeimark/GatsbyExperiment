@@ -52,11 +52,7 @@ const Layout = ({ children, location }) => {
         <div>{children}</div>
         <Archive />
       </MainLayout>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
+      <footer>© {new Date().getFullYear()}, Tony Heimark</footer>
     </>
   )
 }

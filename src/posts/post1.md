@@ -2,6 +2,7 @@
 slug: 'first-post'
 date: '2019-08-18'
 title: 'First Post'
+thumbnail: 'gatsby-astronaut.png'
 ---
 
 # Hello

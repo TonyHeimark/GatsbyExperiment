@@ -2,6 +2,7 @@
 slug: 'third-post'
 date: '2019-08-22'
 title: 'Third Post'
+thumbnail: 'books.jpg'
 ---
 
 # SUP!
