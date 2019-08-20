@@ -1,8 +1,8 @@
 ---
-slug: 'second-post'
+slug: second-post
+title: Second Post
 date: '2019-08-21'
-title: 'Second Post'
-thumbnail: 'books.jpg'
+thumbnail: /src/images/100km_030508_325.jpg
 ---
 
 # SUP!
