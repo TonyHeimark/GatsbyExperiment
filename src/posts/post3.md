@@ -2,7 +2,7 @@
 slug: third-post
 title: Third Post
 date: '2019-08-22'
-thumbnail: /src/images/dsc00300-copy.jpg
+thumbnail: /src/images/img_1445_fighting_alfheim_foran.jpg
 ---
 
 # SUP!
