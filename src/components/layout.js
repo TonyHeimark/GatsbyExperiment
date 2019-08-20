@@ -46,7 +46,9 @@ const Layout = ({ children, location }) => {
         )}
       </Spring>
       <div style={{ margin: '0 auto', maxWidth: '1200px' }}>{children}</div>
-      <footer>© {new Date().getFullYear()}, Tony Heimark</footer>
+      <footer style={{ margin: '0 auto', maxWidth: '1200px' }}>
+        © {new Date().getFullYear()}, Tony Heimark
+      </footer>
     </>
   )
 }

@@ -21,6 +21,7 @@ const postLayout = props => {
       max-height: 500px;
       overflow: hidden;
       grid-column: 1/3;
+      margin-bottom: 20px;
     }
 
     @media (max-width: 768px) {
