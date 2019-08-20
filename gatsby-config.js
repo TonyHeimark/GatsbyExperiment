@@ -3,6 +3,7 @@ module.exports = {
     title: `Gatsby-blog`,
     description: `A new blog`,
     author: `Tony Heimark`,
+    siteUrl: 'https://www.pedantic-volhard-bfb2b8.netlify.com',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -15,6 +16,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -55,6 +57,7 @@ module.exports = {
         // Add any options here
       },
     },
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-netlify`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
