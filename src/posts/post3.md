@@ -1,8 +1,8 @@
 ---
-slug: 'third-post'
+slug: third-post
+title: Third Post
 date: '2019-08-22'
-title: 'Third Post'
-thumbnail: 'books.jpg'
+thumbnail: /src/images/dsc00300-copy.jpg
 ---
 
 # SUP!
