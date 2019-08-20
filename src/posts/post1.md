@@ -1,8 +1,8 @@
 ---
-title: First Post
 slug: first-post
+title: First Post
 date: '2019-08-18'
-thumbnail: pc.jpg
+thumbnail: /src/images/background.jpg
 ---
 
 # Hello
